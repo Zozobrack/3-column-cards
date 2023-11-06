@@ -1,0 +1,105 @@
+  /*<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>*/
+
+  body{
+    margin: 0px;
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  main{
+    width:50%;
+    height:400px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1fr;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  section{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section1{
+    background-color:hsl(31, 77%, 52%);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+  }
+
+  .section2{
+    background-color:hsl(184, 100%, 22%);
+    
+  }
+
+  .section3{
+    background-color:hsl(179, 100%, 13%);
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+
+  }
+
+  h1{
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 2em;
+    color:hsl(0, 0%, 95%);
+  }
+
+  p{
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8em;
+    line-height:1.7em;
+  }
+
+  .img-containeur{
+    position: relative;
+    top: 15px;
+  }
+
+  .button{
+    background-color: hsl(0, 0%, 95%);
+    height: 40px;
+    width: 130px;
+    border-radius: 35px;
+    text-align: center;
+    position:relative;
+    top: 50px;
+  }
+
+  .button p{
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color: hsl(31, 77%, 52%);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (max-width: 375px){
+
+    main{
+      width:80%;
+      height:90%;
+      display:grid;
+      grid-template-columns:  1fr;
+      grid-template-rows: repeat(3, 1fr);
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .section1,.section2,.section3{
+      height: 400px;
+    }
+  }
